@@ -1,0 +1,12 @@
+# Excluding Moddule Source
+/node_modules
+
+# Excluding Environment Variable
+.env
+*.env.local
+*.env.production
+
+#Excluding IDE and code Editor setting Source
+./vscode
+./idea
+
