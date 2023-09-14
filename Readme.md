@@ -1,4 +1,4 @@
-# Scheduler App
+# Overview
 
 The Scheduler App is a simple web application built with React that allows users to schedule and manage their daily tasks and appointments. This This Projectec is created and maintained by Rohit Tiwari. All of My Projects are Listed in my [Portfolio](https://rohitdev.netlify.app)
 
@@ -30,34 +30,46 @@ To get started with the Scheduler App, follow these steps:
 
 1. Clone the repository to your local machine:
 
-`git clone https://github.com/rohittiwari-dev/schedular-app.git`
+```bash
+git clone https://github.com/rohittiwari-dev/schedular-app.git
+```
 
 2. Navigate to the frontend directory:
 
-`cd schedular-app`
+```bash
+cd schedular-app
+```
 
-`cd scheduler-frontend`
+```bash
+cd scheduler-frontend
+```
 
 3. Rename `.env.example` to `.env`: Add listed variable information :
-   `VITE_BASE_URL="" //this is Api base url`
+```js
+VITE_BASE_URL="" //this is Api base url
+```
 
 4. Install the project dependencies:
-   `npm install`
+```bash
+npm install
+```
 
 ---
 
 ### For Backend
 
 5. Navigate to the Backend directory:
-   `cd ../`
-   `cd scheduler-backend`
+```bash
+cd ../
+cd scheduler-backend
+```
 
 6. Generate google credentials using this video
    [Watch](https://drive.google.com/file/d/1Qc_zhmlaGMsKegh89w_DN7An6u0g5qb5/view?usp=sharing)
 
 7. Rename `.env.example` to `.env`: Add listed variable information :
 
-```
+```bash
 # SERVER PORT
 PORT="" # DEFAULT IS 5000
 #BASE URL FOR SERVER
@@ -93,19 +105,27 @@ GOOGLE_CLIENT_SECRET=""
 7. Don't forget to add database variables
 
 8. Install the project dependencies:
-   `npm install`
+```bash
+npm install
+```
 
 ### Running the App
 
 Once the installation is complete, you can run the app with the following command:
 
 - to start back end run
-  `npm run dev`
+```bash
+npm run dev
+```
 
 The backend will start in development mode and should be accessable in your web browser at [http://localhost:5000](http://localhost:5000).
 
 - to start front end run
-  `cd ../` `cd scheduler-frontend` and then `npm run dev`
+```bash
+cd ../ 
+cd scheduler-frontend 
+npm run dev
+```
 
 The backend will start in development mode and should be accessable in your web browser at [http://localhost:5173](http://localhost:5173).
 
@@ -120,9 +140,11 @@ The backend will start in development mode and should be accessable in your web 
 
 To deploy the Scheduler App to a production server, you can build the optimized production build with the following command:
 
-`npm run build`
+```bash
+npm run build
+```
 
-_Don't forget update environment vairable if changes due to build eg:localhots frontend url_
+> _Don't forget update environment vairable if changes due to build eg:localhots frontend url_
 
 The build files will be generated in the `build` directory. You can then deploy these files to your web hosting platform of choice.
 
