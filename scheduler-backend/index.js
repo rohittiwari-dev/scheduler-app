@@ -7,7 +7,6 @@ import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import passport from "passport";
-import cookieSession from "cookie-session";
 /* Local Import */
 import GlobalErrorHandler from "./middleware/GlobalErrorHandler.js";
 import JWTActions from "./utils/JWTActions.js";
@@ -19,9 +18,11 @@ import authRoutes from "./routes/authRoute.js";
 import "./utils/passport.js";
 import serviceRoute from "./routes/serviceRoute.js";
 import appointmentRoute from "./routes/appointmentRoute.js";
+import session from "express-session";
 
 /* Express App Configuration and Middleware*/
 const app = express();
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
@@ -30,19 +31,26 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
-	cookieSession({
-		name: "session",
-		keys: ["calendly-clone getmetharapy"],
-		maxAge: 24 * 60 * 60 * 100,
-	})
-);
-app.use(
 	cors({
 		origin: ["http://localhost:5173", "http://localhost:4173"],
 		methods: "GET,POST,PUT,DELETE",
 		credentials: true,
 	})
 );
+app.use(
+	session({
+		secret: "getmetharapy",
+		resave: false,
+		saveUninitialized: false,
+		cookie: {
+			// secure: false,
+			maxAge: 24 * 60 * 60 * 1000,
+			httpOnly: true,
+			// sameSite: "none",
+		},
+	})
+);
+
 app.use(passport.initialize());
 app.use(passport.session());
 
