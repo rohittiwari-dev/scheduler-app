@@ -7,6 +7,6 @@
 *.env.production
 
 #Excluding IDE and code Editor setting Source
-./vscode
-./idea
+.vscode
+.idea
 

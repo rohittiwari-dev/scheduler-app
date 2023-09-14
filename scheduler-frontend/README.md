@@ -2,7 +2,7 @@
 
 The Scheduler App is a simple web application built with React that allows users to schedule and manage their daily tasks and appointments. This This Projectec is created and maintained by Rohit Tiwari. All of My Projects are Listed in my [Portfolio](https://rohitdev.netlify.app)
 
-> Google Cloud takes time to setup the urls this might take some time be functional but the applications are live at :
+> the backend is suffering from cors and cookies problem this is working fine in localhost:
 
 Frontend Live at [LINK](https://devschedule.netlify.app/)
 Backend Live at [LINK](https://schedular-backend.onrender.com/)
@@ -37,6 +37,8 @@ To get started with the Scheduler App, follow these steps:
 
 2. Navigate to the frontend directory:
 
+`cd schedular-app`
+
 `cd scheduler-frontend`
 
 3. Rename `.env.example` to `.env`: Add listed variable information :
@@ -51,7 +53,7 @@ To get started with the Scheduler App, follow these steps:
 
 5. Navigate to the Backend directory:
    `cd ../`
-   `cd schedular-backend`
+   `cd scheduler-backend`
 
 6. Generate google credentials using this video
    [Watch](https://drive.google.com/file/d/1Qc_zhmlaGMsKegh89w_DN7An6u0g5qb5/view?usp=sharing)
@@ -103,7 +105,12 @@ Once the installation is complete, you can run the app with the following comman
 - to start back end run
   `npm run dev`
 
-The app will start in development mode and should open in your default web browser at [http://localhost:3000](http://localhost:3000).
+The backend will start in development mode and should be accessable in your web browser at [http://localhost:5000](http://localhost:5000).
+
+- to start front end run
+  `cd ../` `cd scheduler-frontend` and then `npm run dev`
+
+The backend will start in development mode and should be accessable in your web browser at [http://localhost:5173](http://localhost:5173).
 
 ### Usage
 
