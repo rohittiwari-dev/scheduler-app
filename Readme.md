@@ -2,8 +2,7 @@
 
 The Scheduler App is a simple web application built with React that allows users to schedule and manage their daily tasks and appointments. This This Projectec is created and maintained by Rohit Tiwari. All of My Projects are Listed in my [Portfolio](https://rohitdev.netlify.app)
 
-Frontend Live at [LINK](https://devschedule.netlify.app/)
-Backend Live at [LINK](https://schedular-backend.onrender.com/)
+Project Live at [LINK](https://devschedule.netlify.app/)
 
 ## Features
 
