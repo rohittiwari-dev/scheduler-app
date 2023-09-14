@@ -105,7 +105,7 @@ Once the installation is complete, you can run the app with the following comman
 - to start back end run
   `npm run dev`
 
-The app will start in development mode and should open in your default web browser at [http://localhost:3000](http://localhost:3000).
+The app will start in development mode and should open in your default web browser at [http://localhost:3000](http://localhost:5173).
 
 ### Usage
 
