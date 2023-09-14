@@ -37,6 +37,8 @@ To get started with the Scheduler App, follow these steps:
 
 2. Navigate to the frontend directory:
 
+`cd schedular-app`
+
 `cd scheduler-frontend`
 
 3. Rename `.env.example` to `.env`: Add listed variable information :
