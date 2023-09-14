@@ -53,7 +53,7 @@ To get started with the Scheduler App, follow these steps:
 
 5. Navigate to the Backend directory:
    `cd ../`
-   `cd schedular-backend`
+   `cd scheduler-backend`
 
 6. Generate google credentials using this video
    [Watch](https://drive.google.com/file/d/1Qc_zhmlaGMsKegh89w_DN7An6u0g5qb5/view?usp=sharing)
