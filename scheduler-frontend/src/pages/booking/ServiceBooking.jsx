@@ -239,7 +239,7 @@ const ServiceBooking = () => {
 								<Calendar
 									className={"border-none"}
 									minDate={
-										new Date(serviceState.AVAILABILITY?.fromDate) >= new Date()
+										new Date(serviceState.AVAILABILITY?.fromDate) <= new Date()
 											? new Date(serviceState.AVAILABILITY?.fromDate)
 											: null
 									}
