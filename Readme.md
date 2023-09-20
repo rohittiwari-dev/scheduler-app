@@ -4,6 +4,8 @@ The Scheduler App is a simple web application built with React that allows users
 
 Project Live at [LINK](https://devschedule.netlify.app/)
 
+![thumbnail](/thumbnail.png)
+
 ## Features
 
 - Create, edit, and delete Service and book an appointments with listed consultants.
@@ -45,11 +47,13 @@ cd scheduler-frontend
 ```
 
 3. Rename `.env.example` to `.env`: Add listed variable information :
+
 ```js
-VITE_BASE_URL="" //this is Api base url
+VITE_BASE_URL = ""; //this is Api base url
 ```
 
 4. Install the project dependencies:
+
 ```bash
 npm install
 ```
@@ -59,6 +63,7 @@ npm install
 ### For Backend
 
 5. Navigate to the Backend directory:
+
 ```bash
 cd ../
 cd scheduler-backend
@@ -105,6 +110,7 @@ GOOGLE_CLIENT_SECRET=""
 7. Don't forget to add database variables
 
 8. Install the project dependencies:
+
 ```bash
 npm install
 ```
@@ -114,6 +120,7 @@ npm install
 Once the installation is complete, you can run the app with the following command:
 
 - to start back end run
+
 ```bash
 npm run dev
 ```
@@ -121,9 +128,10 @@ npm run dev
 The backend will start in development mode and should be accessable in your web browser at [http://localhost:5000](http://localhost:5000).
 
 - to start front end run
+
 ```bash
-cd ../ 
-cd scheduler-frontend 
+cd ../
+cd scheduler-frontend
 npm run dev
 ```
 
